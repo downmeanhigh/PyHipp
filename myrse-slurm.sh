@@ -14,22 +14,12 @@
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
-<<<<<<< HEAD
 import time; \
 import os; \
-=======
-import os; \
-import time; \
->>>>>>> upstream/main
 t0 = time.time(); \
 print(time.localtime()); \
 os.chdir('sessioneye'); \
 pyh.RPLSplit(SkipLFP=False, SkipHighPass=False); \
 print(time.localtime()); \
 print(time.time()-t0);"
-<<<<<<< HEAD
 aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:710823608214:awsnotify --message "RPLEJobDone"
-=======
-
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:018084650241:awsnotify --message "RSEJobDone"
->>>>>>> upstream/main
